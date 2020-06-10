@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>任务四</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="test4.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="text">
+
+    <span class="title">关闭</span>
+    <span class="title2">注册</span>
+    <span class="title3">登陆</span>
+
+    <span class="tiley"> 开始 </span>
+    <span class="titler"> 结束 </span>
+    <span class="titles"> 降临 </span>
+</header>
+<!--不能写两个头部标签 并且指望他们两个能上下排列 智能写道一行-->
+
+<div class="textdiv">
+    <span class="tiley" > 开始 </span>
+    <span class="titler"> 结束 </span>
+    <span class="titles"> 降临 </span>
+</div>
+<!--这里有一个问题,高度设置了45px 但是显示情况是最顶部显示 试了新方法但是没用 -->
+
+<div class="box" style="background: yellow">
+    <div class="xbox" style="background: #5fc0cd">
+        <img src="./task4-1.png">
+    </div>
+    <input class="inpu" STYLE="background: orange"
+           type="text"
+           placeholder="请输入手机号"
+           pattern="\d{11}">
+</div> <!--最外层上色 图标上色 输入框上色 字体上色在样式里面 -->
+
+<!--inpu 高50px 边框0px  -->
+<!--这看起来先引用一个盒包住，然后指定数据类型 然后内容指定 -->
+<!--注意现在还是在box这个盒子中进行包裹，所以表格这个也是一行多个前面是图标 -->
+<!--type 属性规定要显示的 <input> 元素的类型。-->
+<!--pattern 验证input元素的值，的正则表达式 看起来设置得是只允许输入11位 只允许输入数字，实际都可以违反输入  -->
+<!--placeholder 属性规定可描述输入 <input> 字段预期值的简短的提示信息 。 输入框默认提示信息-->
+<!-- 构造原理 这玩意感觉跟做原型差不多,拉个外围圈子, 图标一放,然后拖个输入款过来,然后内置输入提示写上,
+ 输入框长宽高调节 高级交互就是要和这个一样 输入正则表达式 -->
+
+<div class="boxy" style="background-color:beige">
+  <div class="xboxy">
+    <img src="task4-1.png">
+  </div>
+<!--   写道这我困惑呢这高度怎撑不起来 inpu高50px撑起来的  -->
+    <input class="inpu"
+           type="text"
+           placeholder="请输入身份证号码"
+           pattern="\d{11}">
+</div>
+
+<div class="box">
+    <div class="xbox">
+        <img src="./task4-2.png">
+    </div>
+    <input class="inpu" type="text"
+           placeholder="请输入密码"
+           pattern="\d{11}">
+</div>
+
+<div class="boxy" style="background: antiquewhite">
+    <div class="xboxy" >
+        <img src="task4-2.png">
+    </div>
+<input class="mm"
+       type="text"
+       placeholder="请输入银行卡号"
+       pattern="\d{11}">
+</div>
+
+<button class="land">登   陆</button>
+<!--直接标签 然后选择样式  标签中写提示 按钮还是占一行 -->
+<button class="land"> 退 出 </button>
+<button class="land1"> 道 德 经 </button>
+<a class="pass">忘记密码</a>
+<a class="pass"> 毁灭密码</a>
+<a class="passw"> 哔 哩 哔 哩  </a>
+<!--正好a标签占据一行 样式引用pass对文字外部进行样式覆盖,对文字进行样式覆盖 -->
+</body>
+
+</html>

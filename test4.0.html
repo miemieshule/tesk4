@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>任务四</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="test4.0.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="text">
+
+    <span class="title">关闭</span>
+    <span class="title2">注册</span>
+    <span class="title3">登陆</span>
+
+</header>
+
+<div class="box">
+    <div class="xbox">
+
+        <img src="./task4-1.png">
+
+    </div>
+
+    <input class="inpu"
+           type="text"
+           placeholder="请输入手机号"
+           pattern="\d{11}">
+</div>
+<!--inpu 高50px 边框0px  -->
+<!--这看起来先引用一个盒包住，然后指定数据类型 然后内容指定 -->
+<!--注意现在还是在box这个盒子中进行包裹，所以表格这个也是一行多个前面是图标 -->
+<!--type 属性规定要显示的 <input> 元素的类型。-->
+<!--pattern 验证input元素的值，的正则表达式 看起来设置得是只允许输入11位 只允许输入数字，实际都可以违反输入  -->
+<!--placeholder 属性规定可描述输入 <input> 字段预期值的简短的提示信息 。 输入框默认提示信息-->
+<!-- 构造原理 这玩意感觉跟做原型差不多,拉个外围圈子, 图标一放,然后拖个输入款过来,然后内置输入提示写上,
+ 输入框长宽高调节 高级交互就是要和这个一样 输入正则表达式 -->
+
+<div class="box">
+    <div class="xbox">
+
+        <img src="./task4-2.png">
+
+    </div>
+
+    <input class="inpu" type="text"
+           placeholder="请输入密码"
+           pattern="\d{11}">
+
+</div>
+
+<button class="land">登   陆</button>
+<!--直接标签 然后选择样式  标签中写提示 按钮还是占一行 -->
+<a class="pass">忘记密码</a>
+<!--正好a标签占据一行 样式引用pass对文字外部进行样式覆盖,对文字进行样式覆盖 -->
+</body>
+
+</html>

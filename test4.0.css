@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: #eff0f4;
+}
+/*body主题盒子 宽度设置0 ，背景颜色设置为白色*/
+/*改了颜色 最顶部没有任何变化 头部应该是固定的 改变颜色查看范围 整个body装下所有东西*/
+
+.text {
+    line-height:45px;
+    background-color: #5fc0cd;
+    text-align:center;
+}
+/* 文字标签引用  line行高 44px 文字撑起的空间 看代码写法是用百分比来写 最外层的盒子颜色写的篮子*/
+/* 奇怪了 这个文字居中 放在上一层盒子样式上，下一层盒子进行样式引用，但是没看见引用地方腌 只有登录被变行了，*/
+
+.title {
+    float: left;
+    font-size:15px;
+    color:#ffffff;
+    padding-left: 14px;
+}
+/*向左浮动填充区控制 左浮14px 字体大小15px color颜色设置白色 填充去左边设置14px */
+.title2 {
+    float: right;
+    font-size:15px;
+    color:#ffffff;
+    padding-right: 14px
+}
+/*向右浮动填充区控制 右浮14px 字体大小15px color颜色设置白色 填充去左边设置14px */
+.title3 {
+    font-size:15px;
+    color:#ffffff;
+}
+/*字体大小设置15 指定颜色白色 没有跟上面两个老哥指定边距 也没有指定移动
+就是说 如果自己这一层盒子不进行移动样式的指定，默认就接受上一层盒子的样式
+那为什么不单独写道这里呢，刚才写过来，提示语法错误 难道收居中必须要在上一层盒子进行指定才能使用？*/
+.box{
+    background-color: #ffffff;
+    margin-top: 8px;
+}
+/*这里有个地方 不用计算head头部高度的值 只要重新给个顶部的值就行
+magrin - top 这个我以为只有上边的边 但是调节大小，对下边的边也有影响*/
+.xbox {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    padding-left: 22px;
+    padding-right: 24px;
+    border-right: 2px solid #eaedee;
+}
+/*相对位置 顶部6px 一行多个可设置宽高
+ 填充区左边22 填冲区右边24 边框区右2px solid意义指定边框为实线 颜色灰色
+ 牛逼 真是个天才 */
+.inpu {
+    height: 50px;
+    border: 0px;
+    width: 79%;
+    outline:none;
+    /* font-size: 17px; */
+    /* position: relative;
+    left: 30px; */
+/*   inpu 高50px 边框0px  */
+}
+input::-webkit-input-placeholder{
+    color:#e1e5e7;
+    font-size: 18px;
+}
+.land {
+    border: 0px;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    background: #5fc0cd ;
+    color: #ffffff;
+}
+/* border这个很奇怪,如果不加吧回出现黑边,如果加了0px 黑边会消失 应该是按钮默认的黑边
+宽度百分百自适应
+外边距顶部加8px 内边距顶部8px 内边距底部8px
+文字大小18px weight 字体粗体设置
+指定背景图像颜色设置为蓝色 color应该专门针对字体颜色设定*/
+.pass {
+    display: block;
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #5fc0cd;
+    float: right;
+}
+/*一行多个 外边距顶部8px 外边距右边8px 字体大小15px 字体粗体 600
+字体颜色灰色 右浮动*/
+
+
+
+/* .xbox{
+    width: 18px;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    /* float: left; */
+/* background-color:rgb(255,255,255);
+padding-bottom: 9px;
+
+}
+.sbi{
+height: 50px;
+width: 76%;
+
+border: 0px;
+float: right;
+} */
+/* input{
+    height: 50px;
+    width: 100%;
+    margin-top: 11px;
+    border: 0px;
+} */
+/* .color{
+    background-color:rgb(255,255,255);
+    margin-top: 2%;
+}
+.border{
+    border-right: 2px solid rgb(234, 237, 238);
+    line-height:55px;
+    display: inline-block;
+} */
